@@ -49,7 +49,7 @@ export default class CustomerCreateComponent extends Component {
             firstName: '',
             lastName: '',
             orders: []
-        })
+        });
         this.props.history.push('/customers');
     }
 
@@ -77,11 +77,13 @@ export default class CustomerCreateComponent extends Component {
                     </div>
                     <div className="form-group">
                         <label>Compras</label>
-                        {
-                            this.orders = this.state.orders.map((item, key) =>
-                                <li key={item}>{item.quantity}</li>
-                            )
-                        }
+                        <select className="form-control" id="compras">
+                            {this.state.orders.map((order, index) => (
+                                <div>
+
+                                </div>
+                            ))}
+                        </select>
                     </div>
                     <div className="form-group">
                         <input type="submit"
