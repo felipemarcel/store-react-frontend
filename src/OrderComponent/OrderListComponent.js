@@ -34,6 +34,8 @@ export default class OrderListComponent extends Component {
                     <thead>
                     <tr>
                         <th>Status</th>
+                        <th>Produtos</th>
+                        <th>Total</th>
                         <th colSpan="2">Ação</th>
                     </tr>
                     </thead>
